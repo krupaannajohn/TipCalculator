@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="col">
+            <img src="https://i.pinimg.com/736x/8e/1c/eb/8e1ceb5182896e90a5d352efd97dd6fa.jpg" id="img1">
+            
+            <h2>Presenting to you the</H2>
+            <h1>TIP CALCULATOR</h1>
+            <h3>Cheers to avoiding awkward<br> 
+                mathematically stingy moments!</h3>
+
+            <label for="bill-amount">
+                Enter the Bill Amount:</label>  
+                <input type="text" id="amount">
+            <br>
+
+            <label for="service-quality">
+                Select the Service Quality:</label>
+                <select id="options">
+                    <option value="0">Select Option</option>
+                    <option value="0.25">25%: Excellent Service</option>
+                    <option value="0.15">15%: Very Good Service</option>
+                    <option value="0.1">10%: Satisfactory Service</option>
+                    <option value="0.05">5%: Enhanceable Service</option>
+                </select>
+            <br>
+
+            <label for="People">
+                Enter No of People:  </label>
+                <input type="text" id="noOfPeople">
+            <br>
+
+            <button onclick="calculateTip()"><b>Calculate</b></button>
+            <hr>
+
+            <div class="tip">
+                <p>Tip Amount</p>
+                <span id="total">0</span>₹
+                <span id="each">each</span>
+            </div>
+
+            <img src="https://media.istockphoto.com/id/499247165/photo/leftover-food-bill-and-money.jpg?s=612x612&w=0&k=20&c=W7gCp0vUg-i-N4ENas7luQZbEr6NgIxVxw2CXVn9bQI=" id="img2">
+        </div>
+    </div>
+
+    <footer><b>&copy; 2024 Tips & Treats Co.</b></footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

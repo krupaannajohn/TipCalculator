@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/premium-photo/illustration-cafe-interior-with-tables-chairs-ai-generated_843560-155.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 70vh;
+    margin: 20px;
+    background-image: linear-gradient(to left,rgb(196, 151, 151),rgba(159, 4, 4, 0.382));
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      width: 100%; 
+      height: 100%;
+  }
+}
+  
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+  
+
+#img1{
+    height:200px;
+    width:200px;
+}
+
+#img2{
+    height:300px;
+    width:250px;
+    display: none;
+}
+
+.result{
+    background-image: linear-gradient(to right,rgb(238, 178, 65),rgba(165, 42, 42, 0.708));
+    color: black;
+}
+
+input,select{
+    background-color:rgb(232, 242, 164);
+    border-radius: 5px;
+    height: 3vh;
+}
+
+button{
+    background-image: linear-gradient(to right,rgb(253, 184, 195),rgb(27, 1, 6));
+    color: white;
+    font-size: 1em;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    cursor:pointer;
+    
+}
+
+button:hover{
+    background: linear-gradient(to right, cadetblue, #336735);
+    color: black;
+}
+
+.tip{
+    display: none;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+#total{
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+#each{
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    border-radius: 0px;
+    background-color: rgba(112, 8, 8, 0.645);
+    font-size: 17px;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+}
